@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Sample Vault</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--------------- Mobile Message --------------->
+    <div class="mobile-message">
+      <h2>Please use application on larger screen</h2>
+    </div>
+
+    <!--------------------------------- SAMPLE ENTRY FORM --------------------------------->
+    <div class="all-forms center">
+      <div class="form">
+        <h1>Sample Entry</h1>
+        <form id="sampleForm">
+          <!-- <label for="sampleID">Sample ID:</label><br />
+      <input type="text" id="sampleID" name="sampleID" /><br /> -->
+
+          <label for="sampleBatch">Batch Number:</label><br />
+          <input
+            type="text"
+            id="batchNumber"
+            name="batchNumber"
+            placeholder="batch number"
+          /><br />
+
+          <label for="sampleName">Sample Name:</label><br />
+          <input
+            type="text"
+            id="sampleName"
+            name="sampleName"
+            maxlength="8"
+            placeholder="sample name"
+          /><br />
+
+          <label for="sampleLocation">Sample Location:</label><br />
+          <input
+            type="text"
+            id="sampleLocation"
+            name="sampleLocation"
+            placeholder="sample location"
+          /><br />
+
+          <label for="sampleProtocol">Protocol:</label><br />
+          <select id="sampleProtocol" name="sampleProtocol">
+            <option value="Protocol1">Protocol 1</option>
+            <option value="Protocol2">Protocol 2</option>
+            <option value="Protocol3">Protocol 3</option></select
+          ><br />
+
+          <label for="sampleStatus">Status:</label><br />
+          <select id="sampleStatus" name="sampleStatus">
+            <option value="Status1">Status 1</option>
+            <option value="Status2">Status 2</option>
+            <option value="Status3">Status 3</option>
+            <option value="Status4">Status 4</option>
+            <option value="Status5">Status 5</option></select
+          ><br />
+
+          <input
+            class="button"
+            type="button"
+            value="Submit"
+            onclick="submitSample()"
+          />
+        </form>
+      </div>
+
+      <!--------------------------------- BATCH UPDATE FORM --------------------------------->
+      <div class="form">
+        <h1>Update Batch</h1>
+        <form id="batchUpdateForm">
+          <label for="updateBatchNumber">Batch Number:</label><br />
+          <input
+            type="text"
+            id="updateBatchNumber"
+            name="updateBatchNumber"
+            placeholder="enter batch #"
+          /><br />
+
+          <label for="updateBatchStatus">Status:</label><br />
+          <select id="updateBatchStatus" name="updateBatchStatus">
+            <option value="Status1">Status 1</option>
+            <option value="Status2">Status 2</option>
+            <option value="Status3">Status 3</option>
+            <option value="Status4">Status 4</option>
+            <option value="Status5">Status 5</option></select
+          ><br />
+
+          <input
+            class="button"
+            type="button"
+            value="Update"
+            onclick="updateBatch()"
+          />
+        </form>
+
+        <h1>Update Sample</h1>
+        <form id="sampleUpdateForm">
+          <label for="sampleID">Sample ID:</label><br />
+          <input
+            type="text"
+            id="sampleID"
+            name="sampleID"
+            placeholder="enter sample ID"
+          /><br />
+
+          <label for="updateStatusByID">Status:</label><br />
+          <select id="updateStatusByID" name="updateStatusByID">
+            <option value="Status1">Status 1</option>
+            <option value="Status2">Status 2</option>
+            <option value="Status3">Status 3</option>
+            <option value="Status4">Status 4</option>
+            <option value="Status5">Status 5</option></select
+          ><br />
+
+          <input
+            class="button"
+            type="button"
+            value="Update"
+            onclick="updateSample()"
+          />
+        </form>
+      </div>
+
+      <!--------------------------------- SAMPLE SEARCH FORM --------------------------------->
+      <div class="form">
+        <h1>View by Batch</h1>
+        <form id="sampleSearchForm">
+          <label for="searchBatch">Batch Number:</label><br />
+          <input
+            type="text"
+            id="searchBatch"
+            name="searchBatch"
+            placeholder="search by batch #"
+          /><br />
+
+          <input
+            class="button"
+            type="button"
+            value="Search"
+            onclick="searchSampleByBatch()"
+          />
+        </form>
+
+        <h1>View by ID</h1>
+        <form id="sampleSearchByID">
+          <label for="searchID">Sample ID:</label><br />
+          <input
+            type="text"
+            id="searchID"
+            name="searchID"
+            placeholder="search by ID"
+          /><br />
+
+          <input
+            class="button"
+            type="button"
+            value="Search"
+            onclick="searchSampleByID()"
+          />
+        </form>
+      </div>
+    </div>
+
+    <!-- <div class="results"></div> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
